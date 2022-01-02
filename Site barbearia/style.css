@@ -1,0 +1,186 @@
+body{
+    background-color: rgb(214, 214, 214);
+}
+.header{
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.bgHeader{
+    position: fixed;
+    width: 100%;
+    transition: all ease-in-out 0.3s;
+}
+.header img{
+    width: 50px;
+    margin: 0 20px;
+}
+.headerList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.headerList li{
+    margin: 15px;
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 1px 2px #111;
+}
+.headerList a{
+    text-decoration: none;
+    color: white;
+}
+.headerList a:hover{
+    color: rgb(54, 213, 228);
+}
+.title{
+    text-align: center;
+    padding: 15px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0, 0, 0, 0.431);
+    text-shadow: 2px 1px 2px black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.subtitle{
+    font-size: 1.6em;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px 20px;
+}
+.destaque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white; 
+    background-attachment: fixed;
+    background-image: url('https://www.estudioroxo.com.br/wp-content/uploads/post-blog-estudio-roxo-o-sucesso-das-barbearias-4-4-2.jpg');
+}
+.ambiente{
+    max-width: 960px;
+    margin: 50px auto;
+    border: none;
+    border-bottom: 1px solid rgb(12, 73, 241);
+}
+.ambiente-beneficio{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 50px;
+}
+.ambiente-beneficio img{
+    max-width: 120px;
+    max-height: 120px;
+    padding: 30px;
+    background-color: turquoise;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+.beneficio h2{
+    font-size: 1.2em;
+    padding: 20px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.beneficio p{
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 600px;
+
+}
+.produtos{
+    max-width: 960px;
+    margin: 30px auto;
+    border: none;
+    border-bottom: 1px solid rgb(12, 73, 241) ;
+}
+.produtos-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.produtos-item{
+    background-color: turquoise;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.produtos-item:hover{
+    background-color: rgb(52, 187, 173);
+}
+.produtos-item img{
+    width: 200px;
+    padding: 20px;
+}
+.produtos-item h2{
+    font-size: 1.3em;
+    padding-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.precos{
+    max-width: 960px;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid rgb(12, 73, 241);
+}
+.preco-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.preco-item{
+    background-color: turquoise;
+    padding: 20px;
+    width: 200px;
+    max-width: 300px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.preco-item h2{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.preco-item li{
+    padding: 10px;
+}
+.preco-item ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.localizacao{
+    max-width: 960px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+.localizacao iframe{
+    margin: 30px auto;
+    width: 760px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px){
+    h2, p, h1{
+        text-align: center;
+        max-width: 300px;
+    }
+    .localizacao iframe{
+        width: 300px;
+        height: 400px;
+    }
+}
