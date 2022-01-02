@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(4, 16, 24);
+}
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 0.5px solid rgba(255, 255, 255, 0.486);
+}
+.header-list{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.header-list li{
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+.header-list a {
+    position: relative;
+    color: rgb(179, 178, 178);
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 10px;
+}
+.header-list a:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+}
+.header-list a:hover{
+    color: white;
+}
+.header-list a:hover:after{
+    width: 100%;
+    transition: all ease-in-out 0.3s;
+}
+#selecionado a:after{
+    width: 100%;
+}
+#selecionado a{
+    color: white;
+}
