@@ -1,11 +1,12 @@
 body{
-    background-color: rgb(4, 16, 24);
+    background-color: #12253f;
 }
 .header-bg{
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    transition: all ease-in-out 0.3s;
 }
 .header{
     max-width: 960px;
@@ -23,7 +24,7 @@ body{
 }
 .header-list a {
     position: relative;
-    color: rgb(182, 179, 179);
+    color: rgb(211, 207, 207);
     letter-spacing: 0.5px;
     font-size: 18px;
     text-decoration: none;
@@ -65,5 +66,15 @@ body{
     justify-content: center;
 }
 .about{
-    color: orange;
+    margin: 0 auto;
+    max-width: 960px;
+}
+.about h1{
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+.about p {
+    color: #f2ae30;
 }
