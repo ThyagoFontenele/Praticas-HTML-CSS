@@ -18,6 +18,10 @@ function sizeOfThings(){
     }
     else{
         menuHeader.style.display = '';
+        const menu = document.querySelector('.menu');
+        const imgMenu = document.querySelector('.menu-icon');
+        imgMenu.src = './assets/menu.png';
+        menu.style.display = 'none'
     }
 };
 sizeOfThings();
@@ -28,12 +32,15 @@ window.addEventListener('resize', function(){
 
 
 const menu = document.querySelector('.menu');
+const imgMenu = document.querySelector('.menu-icon');
 menu.style.display = 'none'
 const handleMenu = () => {
     if(menu.style.display == 'none'){
         menu.style.display = ''
+        imgMenu.src = './assets/cancel.png';
     }else{
         menu.style.display = 'none';
+        imgMenu.src = './assets/menu.png';
     }
     
 }
