@@ -33,8 +33,71 @@
     border-radius: 5px;
 }
 .our-bg{
-    background-color: white;
+    background-color: rgb(200, 200, 200);
+}
+.our-bg h1{
+    text-align: center;
+    padding: 15px 0;
+    font-size: 2em;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-family: sans-serif;
 }
 .our-plates{
-
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.our-plates span{
+    text-align: center;
+    cursor: pointer;
+    font-size: 4em;
+    font-weight: bold;
+}
+.plate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(233, 218, 12);
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    
+}
+.plate img{
+    width: 220px;
+}
+.plate h2{
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    font-size: 1.5em;
+    padding: 10px 0;
+    font-family: sans-serif;
+}
+.plate p {
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    font-size: 1em;
+    padding: 10px 0;
+    font-family: sans-serif;
+}
+.balls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ball{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0px 8px 10px 0;
+}
+#x{
+    background-color: black;
 }
