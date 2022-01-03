@@ -1,12 +1,64 @@
 body{
     background-color: #12253f;
 }
+.menu{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #12253f;
+    z-index: -1;
+}
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu li{
+    padding: 20px 0;
+}
+.menu a {
+    position: relative;
+    color: rgb(211, 207, 207);
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.menu a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -8px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: all ease-in-out 0.3s;
+    transform: scale(0, 1);
+}
+#selecionado a:after{
+    transform: scale(1, 1);
+}
+#selecionado a{
+    color: white;
+}
+.header img{
+    width: 32px;
+    padding: 0px;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}
 .header-bg{
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.4s;
 }
 .header{
     max-width: 960px;
@@ -39,7 +91,7 @@ body{
     bottom: -8px;
     height: 2px;
     background-color: rgb(255, 255, 255);
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.2s;
     transform: scale(0, 1);
 }
 .header-list a:hover{
@@ -71,10 +123,18 @@ body{
 }
 .about h1{
     color: white;
-    padding: 20px;
+    margin: 20px auto;
     font-size: 2em;
     text-align: center;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: 700;
 }
 .about p {
     color: #f2ae30;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin: 20px auto;
 }
