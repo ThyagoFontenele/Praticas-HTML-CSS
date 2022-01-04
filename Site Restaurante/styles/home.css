@@ -44,28 +44,46 @@
     transform: translate3d(0px, 0px, 0px);
 }
 .our-bg{
-    background-color: #12253f;
+    margin: 0 auto;
 }
 .our-bg h1{
     text-align: center;
-    padding: 15px 0;
+    margin: 30px 0px;
     font-size: 2em;
     font-weight: bolder;
     letter-spacing: 1px;
     color: white;
 }
 .our-plates{
-    max-width: 960px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    height: 600px;
+    border-radius: 2px;
+    color: black;
+    cursor: pointer;
+}
+.our-plates:hover .body-to{
+    opacity: 1;
+}
+.body-to{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.171);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
 }
 .to-left, .to-right{
     width: 50px;
     cursor: pointer;
+    padding: 0 10px;
     margin: 0 auto;
-    opacity: 0.8;
+    opacity: .7;
 }
 .to-right{
     transform: rotateY(180deg);
@@ -83,8 +101,8 @@
     
 }
 .plate img{
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
 }
 .plate h2{
     text-align: center;
@@ -94,7 +112,6 @@
     min-width: 200px;
     font-size: 1.5em;
     padding: 10px 0;
-    color: #fafafa;
     transition: all ease-in-out 0.3s;
     text-transform: capitalize;
 }
@@ -103,39 +120,33 @@
     font-weight: bolder;
     letter-spacing: 0.5px;
     font-size: 1em;
-    color: #fafafa;
-    width: 600px;
+    width: 400px;
     min-width: 200px;
 }
 .balls{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px 0px;
 }
 .ball{
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background-color: #fff;
     border-radius: 50%;
-    margin: 0px 8px 10px 0;
+    margin: 0px 10px;
     transition: all ease-in-out 0.3s;
 
 }
 .x{
-    background-color: #111;
-    width: 15px;
-    height: 15px;
+    background-color: rgb(211, 69, 25);
+    width: 20px;
+    height: 20px;
 }
 
 @media (max-width: 760px) {
     .logo-home{
         width: 400px;
-    }
-    .to-right, .to-left{
-        width: 25px;
-        background-color: rgba(0, 0, 0, 0.205);
-        padding: 10px 0;
-        border-radius: 10%;
     }
     .plate{
         width: 200px;
