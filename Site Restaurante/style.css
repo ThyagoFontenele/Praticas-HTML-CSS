@@ -5,7 +5,6 @@
     right: 0;
     top: 0;
     background-color: #12253f;
-    z-index: -1;
 }
 .menu ul{
     display: flex;
@@ -48,9 +47,10 @@
     width: 32px;
     padding: 10px 20px;
     cursor: pointer;
+    z-index: 1;
 }
 .header-bg{
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
