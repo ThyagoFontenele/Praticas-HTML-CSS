@@ -55,4 +55,21 @@ const ToRight = () => {
     changeInformation();
     ballsElement[n].classList.add('x');
 }
+window.addEventListener('scroll', () =>{
+    let opac;
+    let transfo;
+    const logoHome= document.querySelector('.introduction-items');
+    const variable = Math.ceil(window.scrollY/4)
+    console.log(Math.ceil(window.scrollY/4))
+    if(window.scrollY > 1){
+        opac = 1 - window.scrollY/550;
+        transfo = variable;
+    }
+    
+    if(scrollY >= 1000){
+        transfo = 0;
+    }
 
+    logoHome.style.opacity = opac;
+    logoHome.style.transform = `translate3d(0px, ${transfo}px, 0px)`;
+ }); 

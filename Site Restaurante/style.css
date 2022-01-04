@@ -49,11 +49,13 @@
     z-index: 1;
 }
 .header-bg{
-    position: absolute;
+    position: fixed;
+    background-color: #12253f;
     top: 0;
     right: 0;
     left: 0;
     transition: all ease-in-out 0.4s;
+    z-index: 1;
 }
 .header{
     max-width: 960px;

@@ -1,13 +1,3 @@
-window.addEventListener('scroll', () =>{
-    const background = document.querySelector('.header-bg');
-    if(window.scrollY > 250 && background.style.backgroundColor != '#12253f'){
-        background.style.backgroundColor = '#12253f'
-        background.style.position = 'fixed';
-    }else if(window.scrollY === 0){
-        background.style.backgroundColor = ''
-        background.style.position = 'absolute';
-    }
-});
 function sizeOfThings(){
     var windowWidth = window.innerWidth;
     const menuIcon = document.querySelector('.menu-icon');
