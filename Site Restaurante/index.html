@@ -41,8 +41,8 @@
         <div class="introduction-items">
             <img src="https://fs.noorgram.ir/xen/2021/06/2148_dc379b95f993fe797a4e4458261d6680.png" alt="logo" class="logo-home">
             <h2>The best Restaurant</h2>
-            <button onclick="buttonMore()" class="button-more"><p>More</p></button>
         </div>
+        <button onclick="buttonMore()" class="button-more"><p class="down-arrow"></p></button>
     </div>
     <div class="our-bg">
         <h1>Nossos Pratos Famosos</h1>
@@ -52,20 +52,24 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/32/32542.png"class="to-left">
             </span>
             <div class="plate">
-                <img alt="foto do prato" class="plate-img">
-                <h2 class="plate-name"></h2>
-                <p class="plate-description"></p>
+                <span class="plate-info">
+                    <img alt="foto do prato" class="plate-img">
+                    <h2 class="plate-name"></h2>
+                    <p class="plate-description"></p>
+                </span>
+                
+                <div class="balls">
+                    <div class="ball" onclick="clickBall(0)" ></div>
+                    <div class="ball" onclick="clickBall(1)"></div>
+                    <div class="ball" onclick="clickBall(2)"></div>
+                </div> 
             </div>
             <span class="body-to-right" onclick="ToRight()">
                 <img src="https://cdn-icons-png.flaticon.com/512/32/32542.png" class="to-right">
             </span>
         </section>
 
-        <div class="balls">
-            <div class="ball" onclick="clickBall(0)" ></div>
-            <div class="ball" onclick="clickBall(1)"></div>
-            <div class="ball" onclick="clickBall(2)"></div>
-        </div> 
+        
     </div>
     
     <script type="text/javascript" src="./scripts/home.js"></script>

@@ -29,6 +29,7 @@ const clickBall = (number) => {
     n = number;
     changeInformation();
 }
+const plate = document.querySelector('.plate-info');
 const changeInformation = () => {
     ballsElement[n].classList.add('x');
     imagePlate.src = plates[n].imageUrl;
@@ -46,7 +47,6 @@ const ToLeft = () => {
     }
     changeInformation();
     ballsElement[n].classList.add('x');
-    
 }
 
 const ToRight = () => {
@@ -65,13 +65,13 @@ let transfo;
 const logoHome= document.querySelector('.introduction-items');
 
 window.addEventListener('scroll', () =>{
-    const variable = Math.ceil(window.scrollY/4)
+    const variable = Math.ceil(window.scrollY/6)
     if(window.scrollY > 1){
         opac = 1 - window.scrollY/550;
         transfo = variable;
     }
     
-    if(scrollY >= 600){
+    if(scrollY >= 550){
         transfo = 0;
     }
 
