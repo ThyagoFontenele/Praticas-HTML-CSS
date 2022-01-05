@@ -78,3 +78,21 @@ window.addEventListener('scroll', () =>{
     logoHome.style.opacity = opac;
     logoHome.style.transform = `translate3d(0px, ${transfo}px, 0px)`;
  }); 
+
+ const scrollTo = (event) =>{
+    event.preventDefault();
+    const to = getScrollTopByHref(event.target);
+    window.scroll({
+        top: to,
+        behavior: "smooth"
+    });
+ }
+ function getScrollTopByHref(element) {
+    const id = element.getAttribute('href');
+    return document.querySelector(id).offsetTop;
+ }
+
+ const button = document.querySelector('.a-button');
+ button.addEventListener('click', scrollTo);
+
+ 

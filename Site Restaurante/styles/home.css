@@ -19,13 +19,19 @@
     align-items: center;
     justify-content: center;
 }
+.logo-home{
+    width: 600px;
+    transform: translate3d(0px, 0px, 0px);
+}
 .introduction-items  h2{
     color: white;
     transform: translateY(-100%);
+    letter-spacing: 1px;
+    margin-bottom: 50px;
     font-family: 'Island Moments', cursive;
     font-size: 3em;
 }
-.introduction button{
+.a-button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +40,7 @@
     width: 100px;
     height: 40px;
     border-radius: 20px 20px 0px 0px;
-    bottom: -2px;
+    bottom: 0px;
     padding: 0;
     border: none;
     cursor: pointer;
@@ -50,10 +56,16 @@
     border-bottom: 2px solid white;
 }
 
-.logo-home{
-    width: 600px;
-    transform: translate3d(0px, 0px, 0px);
+.restaurant{
+    width: 50%;
+    display: flex;
+    background-color: white;
+    height: 300px;
+    margin: 30px auto;
 }
+
+
+
 .our-bg h1{
     text-align: center;
     margin: 50px 0px;
@@ -169,6 +181,9 @@
 }
 
 @media (max-width: 760px) {
+    .introduction{
+        height: 86vh;
+    }
     .body-to-right, .body-to-left{
         opacity: 1;
     }

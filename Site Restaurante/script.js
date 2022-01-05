@@ -29,9 +29,11 @@ const handleMenu = () => {
     if(menu.style.display == 'none'){
         menu.style.display = ''
         imgMenu.src = './assets/cancel.png';
+        imgMenu.style.width = '25px';
     }else{
         menu.style.display = 'none';
         imgMenu.src = './assets/menu.png';
+        imgMenu.style.width = '35px';
     }
     
 }
