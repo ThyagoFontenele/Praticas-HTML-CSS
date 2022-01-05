@@ -24,6 +24,11 @@ const ballsElement = document.querySelectorAll('.ball');
 
 let n = 0;
 
+const clickBall = (number) => {
+    ballsElement[n].className = 'ball';
+    n = number;
+    changeInformation();
+}
 const changeInformation = () => {
     ballsElement[n].classList.add('x');
     imagePlate.src = plates[n].imageUrl;
@@ -32,13 +37,12 @@ const changeInformation = () => {
 }
 
 changeInformation();
-
 const ToLeft = () => {
     ballsElement[n].classList.remove('x');
     if(n > 0){
         n--;
     }else{
-        n = 2;
+        n = (ballsElement.length - 1);
     }
     changeInformation();
     ballsElement[n].classList.add('x');
@@ -47,7 +51,7 @@ const ToLeft = () => {
 
 const ToRight = () => {
     ballsElement[n].classList.remove('x');
-    if(n < 2){
+    if(n < (ballsElement.length - 1) ){
         n++;
     }else{
         n = 0;
@@ -55,18 +59,19 @@ const ToRight = () => {
     changeInformation();
     ballsElement[n].classList.add('x');
 }
+
+let opac;
+let transfo;
+const logoHome= document.querySelector('.introduction-items');
+
 window.addEventListener('scroll', () =>{
-    let opac;
-    let transfo;
-    const logoHome= document.querySelector('.introduction-items');
     const variable = Math.ceil(window.scrollY/4)
-    console.log(Math.ceil(window.scrollY/4))
     if(window.scrollY > 1){
         opac = 1 - window.scrollY/550;
         transfo = variable;
     }
     
-    if(scrollY >= 1000){
+    if(scrollY >= 600){
         transfo = 0;
     }
 

@@ -26,7 +26,7 @@
 .introduction-items button{
     background-color: #12253f;
     color: white;
-    transform: translateY(-100%);
+    transform: translateY(-70%);
     padding: 4px;
     border-radius: 2px;
     border: none;
@@ -43,12 +43,9 @@
     width: 600px;
     transform: translate3d(0px, 0px, 0px);
 }
-.our-bg{
-    margin: 0 auto;
-}
 .our-bg h1{
     text-align: center;
-    margin: 30px 0px;
+    margin: 50px 0px;
     font-size: 2em;
     font-weight: bolder;
     letter-spacing: 1px;
@@ -60,10 +57,10 @@
     align-items: center;
     justify-content: center;
     background-color: white;
-    height: 600px;
     border-radius: 2px;
     color: black;
     cursor: pointer;
+    height: 500px;
 }
 .our-plates:hover .body-to{
     opacity: 1;
@@ -97,14 +94,13 @@
     margin: 20px auto;
     padding: 20px 30px;
     border-radius: 10px;
-    height: 300px;
     
 }
-.plate img{
+.plate-img{
     width: 300px;
     height: 300px;
 }
-.plate h2{
+.plate-name{
     text-align: center;
     font-weight: bolder;
     letter-spacing: 0.5px;
@@ -115,12 +111,13 @@
     transition: all ease-in-out 0.3s;
     text-transform: capitalize;
 }
-.plate p {
+.plate-description{
     text-align: center;
     font-weight: bolder;
     letter-spacing: 0.5px;
     font-size: 1em;
-    width: 400px;
+    width: 600px;
+    height: 30px;
     min-width: 200px;
 }
 .balls{
@@ -132,16 +129,18 @@
 .ball{
     width: 15px;
     height: 15px;
-    background-color: #fff;
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
-    margin: 0px 10px;
+    margin: 0px 5px;
+    transform: translateY(-200%);
     transition: all ease-in-out 0.3s;
-
+    cursor: pointer;
 }
 .x{
-    background-color: rgb(211, 69, 25);
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-230%);
+    background-color: rgb(62, 21, 211);
 }
 
 @media (max-width: 760px) {
