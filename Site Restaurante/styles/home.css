@@ -1,7 +1,7 @@
 .introduction{
     background-image: url('http://fishermanslandingrestaurant.com/wp-content/uploads/2014/05/main_background2.png');
     width: 96vw;
-    height: 92vh;
+    height: 93vh;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -27,17 +27,18 @@
     background-color: #12253f;
     color: white;
     transform: translateY(-70%);
-    padding: 4px;
+    padding: 2px;
     border-radius: 2px;
     border: none;
     cursor: pointer;
+    border: 1px solid white;
 }
 .introduction-items p{
     background-color: #12253f;
     color: white;
     font-size: 1.25em;
     padding: 10px 30px;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 .logo-home{
     width: 600px;
@@ -62,10 +63,13 @@
     cursor: pointer;
     height: 500px;
 }
-.our-plates:hover .body-to{
+.our-plates:hover .body-to-left {
     opacity: 1;
 }
-.body-to{
+.our-plates:hover .body-to-right {
+    opacity: 1;
+}
+.body-to-left{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.171);
     display: flex;
@@ -74,12 +78,25 @@
     justify-content: center;
     opacity: 0;
     transition: all ease-in-out 0.3s;
+    overflow: hidden;
+    margin: 0 auto 0 0;
+}
+.body-to-right{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.171);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    overflow: hidden;
+    margin: 0 0 0 auto;
 }
 .to-left, .to-right{
     width: 50px;
     cursor: pointer;
     padding: 0 10px;
-    margin: 0 auto;
     opacity: .7;
 }
 .to-right{
@@ -93,8 +110,7 @@
     max-width: 700px;
     margin: 20px auto;
     padding: 20px 30px;
-    border-radius: 10px;
-    
+    border-radius: 10px;     
 }
 .plate-img{
     width: 300px;
@@ -137,13 +153,14 @@
     cursor: pointer;
 }
 .x{
-    width: 16px;
-    height: 16px;
     transform: translateY(-230%);
     background-color: rgb(62, 21, 211);
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1024px) {
+    .body-to-right, .body-to-left{
+        opacity: 1;
+    }
     .logo-home{
         width: 400px;
     }
@@ -185,5 +202,8 @@
     }
     .introduction-items button{
         transform: translateY(-60%); 
+    }
+    .body-to{
+        opacity: 1;
     }
 }
