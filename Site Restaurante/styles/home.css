@@ -56,7 +56,7 @@
     border-bottom: 2px solid white;
 }
 
-.restaurant{
+#restaurant{
     width: 50%;
     display: flex;
     background-color: white;
@@ -99,7 +99,6 @@
     justify-content: center;
     opacity: 0;
     transition: all ease-in-out 0.3s;
-    overflow: hidden;
     margin: 0 auto 0 0;
 }
 .body-to-right{
@@ -110,7 +109,6 @@
     justify-content: center;
     opacity: 0;
     transition: all ease-in-out 0.3s;
-    overflow: hidden;
     margin: 0 0 0 auto;
 }
 .to-left, .to-right{
@@ -180,12 +178,14 @@
     padding: 3px;
 }
 
+@media (max-width: 1024px){
+    .body-to-right, .body-to-left{
+        opacity: 1;
+    }
+}
 @media (max-width: 760px) {
     .introduction{
         height: 86vh;
-    }
-    .body-to-right, .body-to-left{
-        opacity: 1;
     }
     .logo-home{
         width: 400px;
@@ -211,6 +211,9 @@
     .balls{
         margin: 30px 0px;
     }
+    .to-left, .to-right{
+        width: 40px;
+    }
 }
 @media (max-width: 380px) {
     .plate-img{
@@ -230,10 +233,10 @@
     .introduction-items  h2{
         font-size: 2em;
     }
-    .body-to{
-        opacity: 1;
-    }
     .balls{
         margin: 0px 0px;
+    }
+    .to-left, .to-right{
+        width: 30px;
     }
 }

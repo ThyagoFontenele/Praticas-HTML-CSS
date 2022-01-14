@@ -1,58 +1,6 @@
 body{
     background-color: rgb(214, 214, 214);
 }
-.header{
-    display: flex;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-
-}
-.bgHeader{
-    position: fixed;
-    width: 100%;
-    transition: all ease-in-out 0.3s;
-}
-.header img{
-    width: 50px;
-    margin: 0 20px;
-}
-.headerList{
-    display: flex;
-    flex-wrap: wrap;
-}
-.headerList li{
-    margin: 15px;
-    font-size: 1.1em;
-    font-weight: 400;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 2px 1px 2px #111;
-}
-.headerList a{
-    position: relative;
-    text-decoration: none;
-    color: white;
-    padding: 0 5px;
-}
-.headerList a:hover{
-    color: rgb(54, 213, 228);
-}
-.headerList a:after{
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 2px;
-    left: 0;
-    bottom: -8px;
-    background-color: rgb(54, 213, 228);
-}
-.headerList a:hover::after{
-    width: 100%;
-    transition: all ease-in-out 0.3s;
-}
 .title{
     text-align: center;
     padding: 15px;
@@ -78,6 +26,7 @@ body{
     color: white; 
     background-attachment: fixed;
     background-image: url('https://www.estudioroxo.com.br/wp-content/uploads/post-blog-estudio-roxo-o-sucesso-das-barbearias-4-4-2.jpg');
+    overflow: hidden;
 }
 .ambiente{
     max-width: 960px;

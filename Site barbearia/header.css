@@ -1,0 +1,145 @@
+.header{
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    box-sizing: border-box;
+}
+#button{
+    display: none;
+    background: none;
+    border: none;
+
+}
+#logo{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 0 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 1px 2px #111;
+}
+#logo:before{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: rgb(54, 213, 228);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+#logo:hover:before{
+    width: 100%;
+}
+#logo:hover {
+    color: rgb(54, 213, 228);;
+}
+.bgHeader{
+    position: fixed;
+    width: 100%;
+    transition: all ease-in-out 0.3s;
+}
+.header img{
+    width: 50px;
+    margin: 0 20px;
+}
+.headerList{
+    display: flex;
+}
+.headerList li{
+    margin: 15px;
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 1px 2px #111;
+}
+.headerList a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+}
+.headerList a:hover{
+    color: rgb(54, 213, 228);
+
+}
+.headerList a:after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -8px;
+    background-color: rgb(54, 213, 228);
+    transition: 0.3s;
+}
+.headerList a:hover::after{
+    width: 100%;
+}
+@media (max-width: 700px){
+    .headerList{
+        display: block;
+        width: 100%;
+        position:absolute;
+        left: -100%;
+        top: 70px;
+        background-color: #c7c7c7;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    #hamburger{
+        width: 20px;
+        border-top: 2px solid black;
+        cursor: pointer;
+    }
+    #hamburger::before{
+        content: '';
+        display: block;
+        margin-top: 5px;
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        transition: 0.5s;
+    }
+    #hamburger::after{
+        content: '';
+        display: block;
+        margin-top: 5px;
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        position: relative;
+        transition: 0.5s;
+    }
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    #nav.active .headerList{
+        left: 0;
+        border-top: 2px solid black; 
+    }
+    #nav.active .header{
+        
+    }
+    .headerList li{
+        padding: 10px;
+    }
+    .bgHeader{
+        background: #c7c7c7;
+    }
+    #button{
+        display: flex;
+    }
+}
