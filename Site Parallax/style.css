@@ -1,0 +1,127 @@
+
+#main{
+    background-image: url('assets/caribeMain.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#destaque{
+    width: 100%;
+    height: 130vh;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+.fonte01{
+    font-size: 10rem;
+}
+#primeirafoto{
+    width: 50%;
+    height: 465px;
+    background-image: url('https://viajarcomcriancas.com.br/wp-content/uploads/2018/10/caribe_viajar-com-criancas_8432032-1260x709.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#segundafoto{
+    background-image: url('https://i.pinimg.com/736x/14/6e/26/146e260432423766f15d9febc4444814.jpg');
+    width: 426px;
+    height: 639px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#who{
+    width: 40%;
+    height: 100px;
+    margin: 0 auto;
+}
+#who h2{
+    padding: 20px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+}
+#who h2::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    top: 10px;
+    left: 0;
+    background-color: turquoise;
+    position: absolute;
+}
+
+.container{
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+section.module p {
+    margin-bottom: 40px;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+section.module.content{
+    padding: 40px 0;
+    background-color: #ece7d5;
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+}
+section.module.parallax:after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0), 80%, #000 100%);
+    
+}
+section.module.parallax-1{
+    background-image: url('https://www.wallmesh.com/wp-content/uploads/2019/10/Paradise-Beach-Palm-Desktop-Wallpaper-2880x1800.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ 
+}
+section.module.parallax-2{
+    background-image: url('https://wallpapercave.com/wp/n92OVwV.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ 
+}
+section.module.parallax-3{
+    background-image: url('assets/caribe.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ 
+}
+section.module.parallax h1{
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+}

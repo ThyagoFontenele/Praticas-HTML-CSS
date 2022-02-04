@@ -17,6 +17,7 @@ const plates = [
     },
     
 ]
+console.log(plates);
 const imagePlate = document.querySelector('.plate-img');
 const namePlate = document.querySelector('.plate-name');
 const descriptionPlate = document.querySelector('.plate-description');
